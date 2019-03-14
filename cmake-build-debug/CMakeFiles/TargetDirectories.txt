@@ -1,0 +1,3 @@
+/Users/bbashiri/andrey/fdf_cLion/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/bbashiri/andrey/fdf_cLion/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/bbashiri/andrey/fdf_cLion/cmake-build-debug/CMakeFiles/make-build-debug/fdf_cLion.dir
