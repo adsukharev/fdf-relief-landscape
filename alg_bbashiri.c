@@ -107,17 +107,12 @@ static  void movements(t_map *map, int i)
 //    map->vector->point[i].z += map->offset;
 }
 
-void manage_bbashiri(t_map *map) {
+int manage_bbashiri(t_map *map) {
 
     int i;
 
     i = 0;
 
-
-//    scale(map);
-//    rotate(&map->vector->point[i].x, &map->vector->point[i].y, &map->vector->point[i].z, 'y', 0.5);
-//    iso(&map->vector->point[i].x, &map->vector->point[i].y , map->vector->point[i].z);
-//    centrelization(map);
     while (i < map->vector->size)
     {
         scale(map, i);
@@ -141,6 +136,37 @@ void manage_bbashiri(t_map *map) {
         }
         i++;
     }
+    return (1);
+}
+
+int manage_bbashiri2(t_map *map) {
+
+    int i;
+
+    i = 0;
+
+    while (i < map->vector->size)
+    {
+        movements(map, i);
+        i++;
+    }
+
+    i = 0;
+    while (i + 1 < map->vector->size)
+    {
+        if ((i + 1) % (map->width))
+        {
+            algorithm(map->vector->point[i].x, map->vector->point[i].y, map->vector->point[i + 1].x,
+                      map->vector->point[i + 1].y, map);
+        }
+        if (i < ((map->height - 1) * map->width))
+        {
+            algorithm(map->vector->point[i].x, map->vector->point[i].y, map->vector->point[i + map->width].x,
+                      map->vector->point[i + map->width].y, map);
+        }
+        i++;
+    }
+    return (1);
 }
 
 

@@ -48,6 +48,9 @@ void    push_back(t_vector *v, t_point el);
 void free_points(t_vector *v);
 
 void algorithm(int x1, int y1, int x2, int y2, t_map *map);
-void manage_bbashiri(t_map *map);
+int manage_bbashiri(t_map *map);
+int manage_bbashiri2(t_map *map);
+
+int key_release(int keycode, t_map *map);
 
 #endif

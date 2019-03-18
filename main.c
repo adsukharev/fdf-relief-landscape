@@ -21,8 +21,9 @@ int main(int av, char **arg)
     map->mlx_ptr = mlx_init();
     map->win_ptr = mlx_new_window(map->mlx_ptr, WINDOW_WIDTH, WINDOW_HEIGHT, "bbashiri/ngunthor");
 
-    mlx_hook(map->win_ptr, int x_event, int x_mask, int (*funct)(), (void *)0);
     manage_bbashiri(map);
+    mlx_hook(map->win_ptr, 3, 1, key_release, map);
+//    mlx_loop_hook(map->mlx_ptr, manage_bbashiri, map);
     mlx_loop(map->mlx_ptr);
     free_points(map->vector);
     return 0;
