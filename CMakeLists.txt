@@ -1,5 +1,5 @@
 cmake_minimum_required (VERSION 2.6)
 project (make-build-debug/fdf_cLion)
-set(SOURCE_FILES main.c fdf.h)
+set(SOURCE_FILES main.c fdf.h vector.c alg_bbashiri.c map.c keyboard_events.c)
 add_executable(make-build-debug/fdf_cLion ${SOURCE_FILES})
-target_link_libraries(make-build-debug/fdf_cLion /Users/bbashiri/andrey/fdf_cLion/libft/libft.a)
+target_link_libraries(make-build-debug/fdf_cLion /Users/bbashiri/andrey/fdf_cLion/libft/libft.a )

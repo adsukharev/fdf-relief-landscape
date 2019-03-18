@@ -123,6 +123,60 @@ make-build-debug/fdf_cLion/fast:
 	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/build
 .PHONY : make-build-debug/fdf_cLion/fast
 
+alg_bbashiri.o: alg_bbashiri.c.o
+
+.PHONY : alg_bbashiri.o
+
+# target to build an object file
+alg_bbashiri.c.o:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.o
+.PHONY : alg_bbashiri.c.o
+
+alg_bbashiri.i: alg_bbashiri.c.i
+
+.PHONY : alg_bbashiri.i
+
+# target to preprocess a source file
+alg_bbashiri.c.i:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.i
+.PHONY : alg_bbashiri.c.i
+
+alg_bbashiri.s: alg_bbashiri.c.s
+
+.PHONY : alg_bbashiri.s
+
+# target to generate assembly for a file
+alg_bbashiri.c.s:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.s
+.PHONY : alg_bbashiri.c.s
+
+keyboard_events.o: keyboard_events.c.o
+
+.PHONY : keyboard_events.o
+
+# target to build an object file
+keyboard_events.c.o:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.o
+.PHONY : keyboard_events.c.o
+
+keyboard_events.i: keyboard_events.c.i
+
+.PHONY : keyboard_events.i
+
+# target to preprocess a source file
+keyboard_events.c.i:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.i
+.PHONY : keyboard_events.c.i
+
+keyboard_events.s: keyboard_events.c.s
+
+.PHONY : keyboard_events.s
+
+# target to generate assembly for a file
+keyboard_events.c.s:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.s
+.PHONY : keyboard_events.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -150,6 +204,60 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/main.c.s
 .PHONY : main.c.s
 
+map.o: map.c.o
+
+.PHONY : map.o
+
+# target to build an object file
+map.c.o:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.o
+.PHONY : map.c.o
+
+map.i: map.c.i
+
+.PHONY : map.i
+
+# target to preprocess a source file
+map.c.i:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.i
+.PHONY : map.c.i
+
+map.s: map.c.s
+
+.PHONY : map.s
+
+# target to generate assembly for a file
+map.c.s:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.s
+.PHONY : map.c.s
+
+vector.o: vector.c.o
+
+.PHONY : vector.o
+
+# target to build an object file
+vector.c.o:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.o
+.PHONY : vector.c.o
+
+vector.i: vector.c.i
+
+.PHONY : vector.i
+
+# target to preprocess a source file
+vector.c.i:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.i
+.PHONY : vector.c.i
+
+vector.s: vector.c.s
+
+.PHONY : vector.s
+
+# target to generate assembly for a file
+vector.c.s:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.s
+.PHONY : vector.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +267,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... make-build-debug/fdf_cLion"
+	@echo "... alg_bbashiri.o"
+	@echo "... alg_bbashiri.i"
+	@echo "... alg_bbashiri.s"
+	@echo "... keyboard_events.o"
+	@echo "... keyboard_events.i"
+	@echo "... keyboard_events.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... map.o"
+	@echo "... map.i"
+	@echo "... map.s"
+	@echo "... vector.o"
+	@echo "... vector.i"
+	@echo "... vector.s"
 .PHONY : help
 
 

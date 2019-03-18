@@ -70,18 +70,78 @@ CMakeFiles/make-build-debug/fdf_cLion.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/make-build-debug/fdf_cLion.dir/main.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bbashiri/andrey/fdf_cLion/main.c -o CMakeFiles/make-build-debug/fdf_cLion.dir/main.c.s
 
+CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.o: CMakeFiles/make-build-debug/fdf_cLion.dir/flags.make
+CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.o: ../vector.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bbashiri/andrey/fdf_cLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.o   -c /Users/bbashiri/andrey/fdf_cLion/vector.c
+
+CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bbashiri/andrey/fdf_cLion/vector.c > CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.i
+
+CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bbashiri/andrey/fdf_cLion/vector.c -o CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.s
+
+CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.o: CMakeFiles/make-build-debug/fdf_cLion.dir/flags.make
+CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.o: ../alg_bbashiri.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bbashiri/andrey/fdf_cLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.o   -c /Users/bbashiri/andrey/fdf_cLion/alg_bbashiri.c
+
+CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bbashiri/andrey/fdf_cLion/alg_bbashiri.c > CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.i
+
+CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bbashiri/andrey/fdf_cLion/alg_bbashiri.c -o CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.s
+
+CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.o: CMakeFiles/make-build-debug/fdf_cLion.dir/flags.make
+CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.o: ../map.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bbashiri/andrey/fdf_cLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.o   -c /Users/bbashiri/andrey/fdf_cLion/map.c
+
+CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bbashiri/andrey/fdf_cLion/map.c > CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.i
+
+CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bbashiri/andrey/fdf_cLion/map.c -o CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.s
+
+CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.o: CMakeFiles/make-build-debug/fdf_cLion.dir/flags.make
+CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.o: ../keyboard_events.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bbashiri/andrey/fdf_cLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.o   -c /Users/bbashiri/andrey/fdf_cLion/keyboard_events.c
+
+CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bbashiri/andrey/fdf_cLion/keyboard_events.c > CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.i
+
+CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bbashiri/andrey/fdf_cLion/keyboard_events.c -o CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.s
+
 # Object files for target make-build-debug/fdf_cLion
 make__build__debug/fdf_cLion_OBJECTS = \
-"CMakeFiles/make-build-debug/fdf_cLion.dir/main.c.o"
+"CMakeFiles/make-build-debug/fdf_cLion.dir/main.c.o" \
+"CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.o" \
+"CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.o" \
+"CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.o" \
+"CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.o"
 
 # External object files for target make-build-debug/fdf_cLion
 make__build__debug/fdf_cLion_EXTERNAL_OBJECTS =
 
 make-build-debug/fdf_cLion: CMakeFiles/make-build-debug/fdf_cLion.dir/main.c.o
+make-build-debug/fdf_cLion: CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.o
+make-build-debug/fdf_cLion: CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.o
+make-build-debug/fdf_cLion: CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.o
+make-build-debug/fdf_cLion: CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.o
 make-build-debug/fdf_cLion: CMakeFiles/make-build-debug/fdf_cLion.dir/build.make
 make-build-debug/fdf_cLion: ../libft/libft.a
 make-build-debug/fdf_cLion: CMakeFiles/make-build-debug/fdf_cLion.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bbashiri/andrey/fdf_cLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable make-build-debug/fdf_cLion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bbashiri/andrey/fdf_cLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable make-build-debug/fdf_cLion"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/make-build-debug/fdf_cLion.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

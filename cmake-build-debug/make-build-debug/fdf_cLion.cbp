@@ -82,10 +82,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/bbashiri/andrey/fdf_cLion/alg_bbashiri.c">
+			<Option target="make-build-debug/fdf_cLion"/>
+		</Unit>
 		<Unit filename="/Users/bbashiri/andrey/fdf_cLion/fdf.h">
 			<Option target="make-build-debug/fdf_cLion"/>
 		</Unit>
+		<Unit filename="/Users/bbashiri/andrey/fdf_cLion/keyboard_events.c">
+			<Option target="make-build-debug/fdf_cLion"/>
+		</Unit>
 		<Unit filename="/Users/bbashiri/andrey/fdf_cLion/main.c">
+			<Option target="make-build-debug/fdf_cLion"/>
+		</Unit>
+		<Unit filename="/Users/bbashiri/andrey/fdf_cLion/map.c">
+			<Option target="make-build-debug/fdf_cLion"/>
+		</Unit>
+		<Unit filename="/Users/bbashiri/andrey/fdf_cLion/vector.c">
 			<Option target="make-build-debug/fdf_cLion"/>
 		</Unit>
 		<Unit filename="/Users/bbashiri/andrey/fdf_cLion/CMakeLists.txt">
