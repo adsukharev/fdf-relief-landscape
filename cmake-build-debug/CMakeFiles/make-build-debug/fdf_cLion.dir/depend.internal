@@ -6,10 +6,20 @@ CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.o
  /Users/bbashiri/andrey/fdf_cLion/fdf.h
  /Users/bbashiri/andrey/fdf_cLion/libft/libft.h
  /Users/bbashiri/andrey/fdf_cLion/minilibx_macos/mlx.h
+CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.o
+ /Users/bbashiri/andrey/fdf_cLion/fdf.h
+ /Users/bbashiri/andrey/fdf_cLion/keyboard_events.c
+ /Users/bbashiri/andrey/fdf_cLion/libft/libft.h
+ /Users/bbashiri/andrey/fdf_cLion/minilibx_macos/mlx.h
 CMakeFiles/make-build-debug/fdf_cLion.dir/main.c.o
  /Users/bbashiri/andrey/fdf_cLion/fdf.h
  /Users/bbashiri/andrey/fdf_cLion/libft/libft.h
  /Users/bbashiri/andrey/fdf_cLion/main.c
+ /Users/bbashiri/andrey/fdf_cLion/minilibx_macos/mlx.h
+CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.o
+ /Users/bbashiri/andrey/fdf_cLion/fdf.h
+ /Users/bbashiri/andrey/fdf_cLion/libft/libft.h
+ /Users/bbashiri/andrey/fdf_cLion/map.c
  /Users/bbashiri/andrey/fdf_cLion/minilibx_macos/mlx.h
 CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.o
  /Users/bbashiri/andrey/fdf_cLion/fdf.h

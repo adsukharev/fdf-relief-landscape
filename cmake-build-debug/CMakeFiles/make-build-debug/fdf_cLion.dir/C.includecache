@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/bbashiri/andrey/fdf_cLion/alg_bbashiri.c
+fdf.h
+/Users/bbashiri/andrey/fdf_cLion/fdf.h
+
 /Users/bbashiri/andrey/fdf_cLion/fdf.h
 libft/libft.h
 /Users/bbashiri/andrey/fdf_cLion/libft/libft.h
@@ -13,6 +17,10 @@ minilibx_macos/mlx.h
 /Users/bbashiri/andrey/fdf_cLion/minilibx_macos/mlx.h
 math.h
 /Users/bbashiri/andrey/fdf_cLion/math.h
+
+/Users/bbashiri/andrey/fdf_cLion/keyboard_events.c
+fdf.h
+/Users/bbashiri/andrey/fdf_cLion/fdf.h
 
 /Users/bbashiri/andrey/fdf_cLion/libft/libft.h
 unistd.h
@@ -28,5 +36,13 @@ fcntl.h
 fdf.h
 /Users/bbashiri/andrey/fdf_cLion/fdf.h
 
+/Users/bbashiri/andrey/fdf_cLion/map.c
+fdf.h
+/Users/bbashiri/andrey/fdf_cLion/fdf.h
+
 /Users/bbashiri/andrey/fdf_cLion/minilibx_macos/mlx.h
+
+/Users/bbashiri/andrey/fdf_cLion/vector.c
+fdf.h
+/Users/bbashiri/andrey/fdf_cLion/fdf.h
 

@@ -51,33 +51,78 @@ void algorithm(int x1, int y1, int x2, int y2, t_map *map)
 //        }
 //    }
 //}
+//void rotate(int *x, int *y, int *z, char c, double rotation)
+//{
+//    int previous_x;
+//    int previous_y;
+//    int previous_z;
+//
+//    previous_x = *x;
+//    previous_y = *y;
+//    previous_z = *z;
+//
+//    if (c == 'x')
+//    {
+//        *y = previous_y * cos(rotation) + previous_z * sin(rotation);
+//        *z = -previous_y * sin(rotation) + previous_z * cos(rotation);
+//    }
+//    else if (c == 'y')
+//    {
+//        *x = previous_x * cos(rotation) + previous_z * sin(rotation);
+//        *z = -previous_x * sin(rotation) + previous_z * cos(rotation);
+//    }
+//    else if (c == 'z')
+//    {
+//        *x = previous_x * cos(rotation) - previous_y * sin(rotation);
+//        *y = previous_x * sin(rotation) + previous_y * cos(rotation);
+//    }
+//    else
+//        return;
+//}
 
-static void rotate(int *x, int *y, int *z, char c, double rotation)
+
+void normilize(int *x, int *y, int *z, t_map *map)
 {
-    int previous_x;
-    int previous_y;
-    int previous_z;
+    *x = *x - map->width / 2;
+    *y = *y - map->height / 2;
+    *z = *z - 30;
+//    float	normalize(float val, float min, float max)
+//    {
+//        if (max - min != 0)
+//            return ((float)(val - min) / (float)(max - min));
+//        else
+//            return (0);
+//    }
+}
+void rotate(int *x, int *y, int *z,  double rotation)
+{
+    float p_x;
+    float p_y;
+    float p_z;
 
-    previous_x = *x;
-    previous_y = *y;
-    previous_z = *z;
-    if (c == 'x')
-    {
-        *y = previous_y * cos(rotation) + previous_z * sin(rotation);
-        *z = -previous_y * sin(rotation) + previous_z * cos(rotation);
-    }
-    else if (c == 'y')
-    {
-        *x = previous_x * cos(rotation) + previous_z * sin(rotation);
-        *z = -previous_x * sin(rotation) + previous_z * cos(rotation);
-    }
-    else if (c == 'z')
-    {
-        *x = previous_x * cos(rotation) - previous_y * sin(rotation);
-        *y = previous_x * sin(rotation) + previous_y * cos(rotation);
-    }
-    else
-        return;
+    p_x = *x;
+    p_y = *y;
+    p_z = *z;
+
+    *x = p_x;
+    *y = p_y * cos(rotation) + p_z * sin(rotation);
+    *z = -p_y * sin(rotation) + p_z * cos(rotation);
+
+    p_x = *x;
+    p_y = *y;
+    p_z = *z;
+
+    *x = p_x * cos(rotation) + p_z * sin(rotation);
+    *y = p_y;
+    *z = -p_x * sin(rotation) + p_z * cos(rotation);
+
+    p_x = *x;
+    p_y = *y;
+    p_z = *z;
+
+    *x = p_x * cos(rotation) - p_y * sin(rotation);
+    *y = p_x * sin(rotation) + p_y * cos(rotation);
+    *z = p_z;
 }
 
 static void iso(int *x, int *y, int z)
@@ -107,6 +152,26 @@ static  void movements(t_map *map, int i)
 //    map->vector->point[i].z += map->offset;
 }
 
+int draw(t_map *map, t_point *point)
+{
+    int i;
+
+    i = 0;
+    while (i + 1 < map->vector->size)
+    {
+        if ((i + 1) % (map->width))
+        {
+            algorithm(point[i].x, point[i].y, point[i + 1].x, point[i + 1].y, map);
+        }
+        if (i < ((map->height - 1) * map->width))
+        {
+            algorithm(point[i].x, point[i].y, point[i + map->width].x, map->vector->point[i + map->width].y, map);
+        }
+        i++;
+    }
+    return (1);
+}
+
 int manage_bbashiri(t_map *map) {
 
     int i;
@@ -116,56 +181,29 @@ int manage_bbashiri(t_map *map) {
     while (i < map->vector->size)
     {
         scale(map, i);
-        rotate(&map->vector->point[i].x, &map->vector->point[i].y, &map->vector->point[i].z, map->axis, map->gradus_axis);
+//        rotate(&map->vector->point[i].x, &map->vector->point[i].y, &map->vector->point[i].z, map->gradus_axis);
         iso(&map->vector->point[i].x, &map->vector->point[i].y , map->vector->point[i].z);
         movements(map, i);
         i++;
     }
-    i = 0;
-    while (i + 1 < map->vector->size)
-    {
-        if ((i + 1) % (map->width))
-        {
-            algorithm(map->vector->point[i].x, map->vector->point[i].y, map->vector->point[i + 1].x,
-                      map->vector->point[i + 1].y, map);
-        }
-        if (i < ((map->height - 1) * map->width))
-        {
-            algorithm(map->vector->point[i].x, map->vector->point[i].y, map->vector->point[i + map->width].x,
-                      map->vector->point[i + map->width].y, map);
-        }
-        i++;
-    }
+
+    draw(map, map->vector->point);
+
     return (1);
 }
 
-int manage_bbashiri2(t_map *map) {
+int manage_bbashiri2(t_map *map)
+{
 
     int i;
 
     i = 0;
-
     while (i < map->vector->size)
     {
         movements(map, i);
         i++;
     }
-
-    i = 0;
-    while (i + 1 < map->vector->size)
-    {
-        if ((i + 1) % (map->width))
-        {
-            algorithm(map->vector->point[i].x, map->vector->point[i].y, map->vector->point[i + 1].x,
-                      map->vector->point[i + 1].y, map);
-        }
-        if (i < ((map->height - 1) * map->width))
-        {
-            algorithm(map->vector->point[i].x, map->vector->point[i].y, map->vector->point[i + map->width].x,
-                      map->vector->point[i + map->width].y, map);
-        }
-        i++;
-    }
+    draw(map, map->vector->point);
     return (1);
 }
 

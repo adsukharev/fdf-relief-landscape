@@ -36,7 +36,7 @@ typedef struct  s_map
     int         offset_y;
     int         zoom;
     char        axis;
-    int         gradus_axis;
+    double      gradus_axis;
 
 }               t_map;
 
@@ -50,7 +50,8 @@ void free_points(t_vector *v);
 void algorithm(int x1, int y1, int x2, int y2, t_map *map);
 int manage_bbashiri(t_map *map);
 int manage_bbashiri2(t_map *map);
-
+void rotate(int *x, int *y, int *z, double rotation);
 int key_release(int keycode, t_map *map);
+int draw(t_map *map, t_point *point);
 
 #endif

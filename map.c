@@ -10,10 +10,10 @@ t_map *init_map(void)
     map->width = 0;
     map->height = 0;
     map->zoom = 25;
-    map->offset_x = 300;
-    map->offset_y = 150;
-    map->axis = 'n';
-    map->gradus_axis = 0;
+    map->offset_x = 500;
+    map->offset_y = 300;
+    map->axis = 'y';
+    map->gradus_axis = 0.1;
 
     return (map);
 }
@@ -53,12 +53,12 @@ void fill_map(char *arg, t_map *map, t_vector *v)
 
     sign = 1;
     fd = open(arg, O_RDONLY);
-    point.y = -1;
+    point.y = -5;
     while (sign)
     {
         sign = get_next_line(fd, &gnl);
         map->height += sign == 1 ? 1 : 0;
-        point.x = 0;
+        point.x = -9;
         point.y++;
         i = 0;
         while (gnl[i])
@@ -70,7 +70,7 @@ void fill_map(char *arg, t_map *map, t_vector *v)
                 i += ft_countint(ft_atoii(&gnl[i])) - 1;
                 push_back(v, point);
                 point.x++;
-                map->width = point.x;
+                map->width = 19;
             }
             i++;
         }
