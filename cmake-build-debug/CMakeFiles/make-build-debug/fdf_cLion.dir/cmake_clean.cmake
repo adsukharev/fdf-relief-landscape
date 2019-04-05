@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.o"
   "CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.o"
   "CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.o"
+  "CMakeFiles/make-build-debug/fdf_cLion.dir/modify.c.o"
   "make-build-debug/fdf_cLion.pdb"
   "make-build-debug/fdf_cLion"
 )

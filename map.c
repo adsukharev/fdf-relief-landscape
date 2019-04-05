@@ -12,13 +12,12 @@ t_map *init_map(void)
     map->zoom = 25;
     map->offset_x = 500;
     map->offset_y = 300;
-    map->axis = 'y';
-    map->gradus_axis = 0.1;
+    map->gradus_axis = 0;
 
     return (map);
 }
 
-static  int		ft_atoii(const char *str)
+static  int	ft_atoii(const char *str)
 {
     int				i;
     long long		res;
@@ -43,37 +42,63 @@ static  int		ft_atoii(const char *str)
     return (res * znak);
 }
 
-void fill_map(char *arg, t_map *map, t_vector *v)
+static int count_width_height_of_map(t_map *map, char *arg)
+{
+    int fd;
+    int i;
+    char *gnl;
+    int validate_width;
+
+    fd = open(arg, O_RDONLY);
+    while (get_next_line(fd, &gnl))
+    {
+        map->height++;
+        validate_width = map->width;
+        if (validate_width != map->width)
+            return (0);
+        map->width = 0;
+        i = 0;
+        while (gnl[i])
+        {
+            if (ft_isdigit(gnl[i]))
+            {
+                map->width++;
+            }
+            i++;
+        }
+    }
+    close(fd);
+    return (1);
+}
+
+int fill_map(char *arg, t_map *map, t_vector *v)
 {
     int fd;
     char *gnl;
-    int sign;
     int i;
     t_point point;
 
-    sign = 1;
+    if (!(count_width_height_of_map(map, arg)))
+        return (0);
     fd = open(arg, O_RDONLY);
-    point.y = -5;
-    while (sign)
+    point.y = -map->height / 2;
+    while (get_next_line(fd, &gnl))
     {
-        sign = get_next_line(fd, &gnl);
-        map->height += sign == 1 ? 1 : 0;
-        point.x = -9;
+        point.x = -map->width / 2;
         point.y++;
         i = 0;
         while (gnl[i])
         {
             if (ft_isdigit(gnl[i]))
             {
-
                 point.z = ft_atoii(&gnl[i]);
                 i += ft_countint(ft_atoii(&gnl[i])) - 1;
                 push_back(v, point);
                 point.x++;
-                map->width = 19;
             }
             i++;
         }
     }
     close(fd);
+    return (1);
 }

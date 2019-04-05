@@ -21,6 +21,11 @@ CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.o: ../libft/libft.h
 CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.o: ../map.c
 CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.o: ../minilibx_macos/mlx.h
 
+CMakeFiles/make-build-debug/fdf_cLion.dir/modify.c.o: ../fdf.h
+CMakeFiles/make-build-debug/fdf_cLion.dir/modify.c.o: ../libft/libft.h
+CMakeFiles/make-build-debug/fdf_cLion.dir/modify.c.o: ../minilibx_macos/mlx.h
+CMakeFiles/make-build-debug/fdf_cLion.dir/modify.c.o: ../modify.c
+
 CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.o: ../fdf.h
 CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.o: ../libft/libft.h
 CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.o: ../minilibx_macos/mlx.h

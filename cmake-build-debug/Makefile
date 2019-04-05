@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Users/bbashiri/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /Users/bbashiri/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bbashiri/andrey/fdf_cLion
+CMAKE_SOURCE_DIR = /Users/andrei/hack/school42/fdf_cLion
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bbashiri/andrey/fdf_cLion/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/andrei/hack/school42/fdf_cLion/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/bbashiri/andrey/fdf_cLion/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Users/bbashiri/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Users/bbashiri/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bbashiri/andrey/fdf_cLion/cmake-build-debug/CMakeFiles /Users/bbashiri/andrey/fdf_cLion/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andrei/hack/school42/fdf_cLion/cmake-build-debug/CMakeFiles /Users/andrei/hack/school42/fdf_cLion/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bbashiri/andrey/fdf_cLion/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andrei/hack/school42/fdf_cLion/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -231,6 +231,33 @@ map.c.s:
 	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.s
 .PHONY : map.c.s
 
+modify.o: modify.c.o
+
+.PHONY : modify.o
+
+# target to build an object file
+modify.c.o:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/modify.c.o
+.PHONY : modify.c.o
+
+modify.i: modify.c.i
+
+.PHONY : modify.i
+
+# target to preprocess a source file
+modify.c.i:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/modify.c.i
+.PHONY : modify.c.i
+
+modify.s: modify.c.s
+
+.PHONY : modify.s
+
+# target to generate assembly for a file
+modify.c.s:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/modify.c.s
+.PHONY : modify.c.s
+
 vector.o: vector.c.o
 
 .PHONY : vector.o
@@ -279,6 +306,9 @@ help:
 	@echo "... map.o"
 	@echo "... map.i"
 	@echo "... map.s"
+	@echo "... modify.o"
+	@echo "... modify.i"
+	@echo "... modify.s"
 	@echo "... vector.o"
 	@echo "... vector.i"
 	@echo "... vector.s"

@@ -19,7 +19,7 @@ clean:
 
 fclean: clean
 	#/bin/rm -f libft/libft.a
-	/bin/rm -f minilibx_macos/libmlx.a
+	#/bin/rm -f minilibx_macos/libmlx.a
 	/bin/rm -f $(NAME)
 
 re: fclean all
