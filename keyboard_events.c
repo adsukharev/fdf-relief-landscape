@@ -23,6 +23,20 @@ int key_release(int keycode, t_map *map)
     {
         map->offset_y += 20;
     }
+    // r-g-b
+    else if (keycode == 15)
+    {
+        map->colour = 0x8B0000;
+    }
+    else if (keycode == 5)
+    {
+        map->colour = 0x008000;
+    }
+    else if (keycode == 11)
+    {
+        map->colour = 0x00FFFF;
+    }
+
     if (keycode == 12)
     {
         map->gradus_axis += 0.1;

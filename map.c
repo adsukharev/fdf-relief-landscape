@@ -9,10 +9,11 @@ t_map *init_map(void)
         return (NULL);
     map->width = 0;
     map->height = 0;
-    map->zoom = 25;
-    map->offset_x = 500;
-    map->offset_y = 300;
+    map->zoom = 4;
+    map->offset_x = WINDOW_WIDTH / 2;
+    map->offset_y = WINDOW_HEIGHT / 2;
     map->gradus_axis = 0;
+    map->colour = 0x00FFFF;
 
     return (map);
 }
@@ -60,12 +61,14 @@ static int count_width_height_of_map(t_map *map, char *arg)
         i = 0;
         while (gnl[i])
         {
-            if (ft_isdigit(gnl[i]))
+            if (ft_isdigit(gnl[i]) || gnl[i] == '-' || gnl[i] == '+')
             {
                 map->width++;
+                i += ft_countint(ft_atoii(&gnl[i])) - 1;
             }
             i++;
         }
+        ft_strdel(&gnl);
     }
     close(fd);
     return (1);
@@ -89,7 +92,7 @@ int fill_map(char *arg, t_map *map, t_vector *v)
         i = 0;
         while (gnl[i])
         {
-            if (ft_isdigit(gnl[i]))
+            if (ft_isdigit(gnl[i]) || gnl[i] == '-' || gnl[i] == '+')
             {
                 point.z = ft_atoii(&gnl[i]);
                 i += ft_countint(ft_atoii(&gnl[i])) - 1;

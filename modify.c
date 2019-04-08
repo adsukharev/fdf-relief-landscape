@@ -44,12 +44,11 @@ void iso(t_point *point)
     point->y = -point->z + (previous_x + previous_y) * sin(0.523599);
 }
 
-
 void scale(t_point old, t_point *new, int zoom)
 {
     new->x = old.x * zoom;
     new->y = old.y * zoom;
-    new->z = old.z * zoom / 5;
+    new->z = old.z * sqrt(zoom);
 }
 
 void movements(t_point *point, int offset_x, int offset_y)

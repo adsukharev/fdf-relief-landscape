@@ -6,15 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/Users/andrei/hack/school42/fdf_cLion/fdf.h
-libft/libft.h
-/Users/andrei/hack/school42/fdf_cLion/libft/libft.h
-minilibx_macos/mlx.h
-/Users/andrei/hack/school42/fdf_cLion/minilibx_macos/mlx.h
-math.h
-/Users/andrei/hack/school42/fdf_cLion/math.h
+/Users/bbashiri/andrey/fdf_new/alg_bbashiri.c
 
-/Users/andrei/hack/school42/fdf_cLion/libft/libft.h
+/Users/bbashiri/andrey/fdf_new/fdf.h
+libft/libft.h
+/Users/bbashiri/andrey/fdf_new/libft/libft.h
+minilibx_macos/mlx.h
+/Users/bbashiri/andrey/fdf_new/minilibx_macos/mlx.h
+math.h
+/Users/bbashiri/andrey/fdf_new/math.h
+
+/Users/bbashiri/andrey/fdf_new/keyboard_events.c
+
+/Users/bbashiri/andrey/fdf_new/libft/libft.h
 unistd.h
 -
 stdio.h
@@ -24,13 +28,11 @@ stdlib.h
 fcntl.h
 -
 
-/Users/andrei/hack/school42/fdf_cLion/main.c
+/Users/bbashiri/andrey/fdf_new/main.c
 fdf.h
-/Users/andrei/hack/school42/fdf_cLion/fdf.h
+/Users/bbashiri/andrey/fdf_new/fdf.h
 
-/Users/andrei/hack/school42/fdf_cLion/map.c
-fdf.h
-/Users/andrei/hack/school42/fdf_cLion/fdf.h
+/Users/bbashiri/andrey/fdf_new/minilibx_macos/mlx.h
 
-/Users/andrei/hack/school42/fdf_cLion/minilibx_macos/mlx.h
+/Users/bbashiri/andrey/fdf_new/modify.c
 

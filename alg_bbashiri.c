@@ -6,21 +6,19 @@ void algorithm(int x1, int y1, int x2, int y2, t_map *map)
     const int deltaY = abs(y2 - y1);
     const int signX = x1 < x2 ? 1 : -1;
     const int signY = y1 < y2 ? 1 : -1;
-    //
+
     int error = deltaX - deltaY;
-    //
-    mlx_pixel_put(map->mlx_ptr, map->win_ptr, x2, y2, 0x8396ff);
+    mlx_pixel_put(map->mlx_ptr, map->win_ptr, x2, y2, map->colour);
     while(x1 != x2 || y1 != y2)
     {
-        mlx_pixel_put(map->mlx_ptr, map->win_ptr, x1, y1, 0x8396ff);
+        mlx_pixel_put(map->mlx_ptr, map->win_ptr, x1, y1, map->colour);
         const int error2 = error * 2;
-        //
-        if(error2 > -deltaY)
+        if (error2 > -deltaY)
         {
             error -= deltaY;
             x1 += signX;
         }
-        if(error2 < deltaX)
+        if (error2 < deltaX)
         {
             error += deltaX;
             y1 += signY;
@@ -79,17 +77,16 @@ int manage_bbashiri(t_map *map) {
 
     vector = init_vector(map->vector->size);
     i = 0;
-
     while (i < map->vector->size)
     {
         scale(map->vector->point[i], &vector.point[i], map->zoom);
         if (map->gradus_axis != 0)
             rotate(&vector.point[i], map->gradus_axis);
-        iso(&vector.point[i]);
+//        iso(&vector.point[i]);
         movements(&vector.point[i], map->offset_x, map->offset_y);
         i++;
     }
-    i = 0;
+//    i = 0;
 //    while (i < map->vector->size)
 //    {
 //            printf("%d ", vector.point[i].x);

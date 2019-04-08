@@ -9,6 +9,7 @@
 
 # define WINDOW_WIDTH   1000
 # define WINDOW_HEIGHT	600
+# define ABS(x) x >= 0 ? x : -x
 
 typedef struct  s_point
 {
@@ -36,6 +37,7 @@ typedef struct  s_map
     int         offset_y;
     int         zoom;
     double      gradus_axis;
+    int         colour;
 
 }               t_map;
 
