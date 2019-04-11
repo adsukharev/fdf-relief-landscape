@@ -14,7 +14,7 @@ t_map *init_map(void)
     map->offset_y = WINDOW_HEIGHT / 2;
     map->gradus_axis = 0;
     map->colour = 16777215;
-    map->camera = 'i';
+    map->camera = 1;
     return (map);
 }
 
@@ -61,14 +61,16 @@ static  long ft_atohex(const char *str)
     int			i;
     long		res;
     int     converted;
-    char dict[18];
+    char    *dict;
 
-    ft_strcpy(dict, "0123456789abcdef");
+    dict = "0123456789abcdef";
+//    ft_strcpy(dict, "0123456789abcdef");
     i = 0;
-    while (str[i])
+    res = 0;
+    while (str[i] != ' ' && str[i] != '\n' && str[i])
     {
-        converted = convert_to_nbm(str[i]);
-        res = dict[converted] + res * 10;
+        converted = convert_to_nbm(str[i++]);
+        res = converted + res * 16;
     }
     return (res);
 }
@@ -78,7 +80,7 @@ int count_hex(char *str)
     int i;
 
     i = 0;
-    while (str[i] != ' ' && str[i])
+    while (str[i] != ' ' && str[i] && str[i] != '\n' )
     {
         i++;
     }
@@ -93,19 +95,18 @@ static int count_width_height_of_map(t_map *map, char *arg)
     int validate_width;
 
     fd = open(arg, O_RDONLY);
+    validate_width = 0;
+
     while (get_next_line(fd, &gnl))
     {
         map->height++;
-        validate_width = map->width;
-        if (validate_width != map->width)
-            return (0);
         map->width = 0;
         i = 0;
         while (gnl[i])
         {
-            if (gnl[i] != ' ' && gnl[i] != ',' && !ft_isdigit(gnl[i]))
+            if (gnl[i] != ' ' && gnl[i] != ',' && gnl[i] != '-' && !ft_isdigit(gnl[i]))
                 return (0);
-            if (ft_isdigit(gnl[i]) || gnl[i] == '-' || gnl[i] == '+')
+            if (ft_isdigit(gnl[i]) || gnl[i] == '-')
             {
                 map->width++;
                 i += ft_countint(ft_atoii(&gnl[i])) - 1;
@@ -141,17 +142,18 @@ int fill_map(char *arg, t_map *map, t_vector *v)
         point.x = -map->width / 2;
         point.y++;
         i = 0;
+        point.colour = 16777215;
         while (gnl[i])
         {
             if (gnl[i] == ',')
             {
-                if (gnl[++i] != '0')
-                    return (0);
-                i += 2;
+//                if (gnl[++i] != '0')
+//                    return (0);
+                i += 3;
                 point.colour = ft_atohex(&gnl[i]);
-                i++;
+                i += count_hex(&gnl[i]);
             }
-            if (ft_isdigit(gnl[i]) || gnl[i] == '-' || gnl[i] == '+')
+            if (ft_isdigit(gnl[i]) || gnl[i] == '-')
             {
                 point.z = ft_atoii(&gnl[i]);
                 i += ft_countint(ft_atoii(&gnl[i])) - 1;

@@ -41,7 +41,7 @@ void    push_back(t_vector *v, t_point el)
     v->point[i].x = el.x;
     v->point[i].y = el.y;
     v->point[i].z = el.z;
-//    v->point[i].colour = el.colour;
+    v->point[i].colour = el.colour;
     v->size++;
 }
 

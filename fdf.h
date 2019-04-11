@@ -57,12 +57,14 @@ void free_points(t_vector *v);
 
 void rotate(t_point *point,  double rotation);
 void iso(t_point *point);
+void    perspective(t_point *p);
+void		dimetric(t_point *p);
 void scale(t_point old, t_point *new, int zoom);
 void movements(t_point *point, int offset_x, int offset_y);
 
 /* ***************************alg_bbashiri.c****************************************** */
 
-void algorithm(int x1, int y1, int x2, int y2, t_map *map);
+void algorithm(int x1, int y1, int x2, int y2, long colour, t_map *map);
 int draw(t_map *map, t_point *point);
 int manage_bbashiri(t_map *map);
 
