@@ -3,8 +3,8 @@
 #ifndef FDF_CLION_FDF_H
 # define FDF_CLION_FDF_H
 
-# include "libft/libft.h"
-# include "minilibx_macos/mlx.h"
+# include "../libft/libft.h"
+# include "../minilibx_macos/mlx.h"
 # include "math.h"
 
 # define WINDOW_WIDTH   1000
@@ -45,6 +45,12 @@ typedef struct  s_map
 
 int fill_map(char *arg, t_map *map);
 
+/* ***************************map.c****************************************** */
+
+int ft_atohex(const char *str);
+int	ft_doublestrlen(char **s);
+void change_height(t_map *map);
+
 /* ***************************vector.c****************************************** */
 
 t_vector     init_vector(int num);
@@ -54,16 +60,17 @@ void free_points(t_vector *v);
 /* ***************************modify.c****************************************** */
 
 void rotate(t_point *point,  double rotation);
-void iso(t_point *point);
-void    perspective(t_point *p);
-void		dimetric(t_point *p);
 void scale(t_point old, t_point *new, int zoom);
 void movements(t_point *point, int offset_x, int offset_y);
 
-/* ***************************alg_bbashiri.c****************************************** */
+/* ***************************camera.c****************************************** */
 
-void algorithm(int x1, int y1, int x2, int y2, int colour, t_map *map);
-int draw(t_map *map, t_point *point);
+void iso(t_point *point);
+void    perspective(t_point *p);
+void		dimetric(t_point *p);
+
+/* ***************************draw.c****************************************** */
+
 int manage_bbashiri(t_map *map);
 
 /* ***************************keyboard_events.c****************************************** */

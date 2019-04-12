@@ -57,106 +57,136 @@ include CMakeFiles/make-build-debug/fdf_cLion.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/make-build-debug/fdf_cLion.dir/flags.make
 
-CMakeFiles/make-build-debug/fdf_cLion.dir/main.c.o: CMakeFiles/make-build-debug/fdf_cLion.dir/flags.make
-CMakeFiles/make-build-debug/fdf_cLion.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/make-build-debug/fdf_cLion.dir/main.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/make-build-debug/fdf_cLion.dir/main.c.o   -c /Users/andrei/hack/school42/fdf_final/main.c
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/main.c.o: CMakeFiles/make-build-debug/fdf_cLion.dir/flags.make
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/main.c.o: ../src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/make-build-debug/fdf_cLion.dir/src/main.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/make-build-debug/fdf_cLion.dir/src/main.c.o   -c /Users/andrei/hack/school42/fdf_final/src/main.c
 
-CMakeFiles/make-build-debug/fdf_cLion.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/make-build-debug/fdf_cLion.dir/main.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/andrei/hack/school42/fdf_final/main.c > CMakeFiles/make-build-debug/fdf_cLion.dir/main.c.i
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/make-build-debug/fdf_cLion.dir/src/main.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/andrei/hack/school42/fdf_final/src/main.c > CMakeFiles/make-build-debug/fdf_cLion.dir/src/main.c.i
 
-CMakeFiles/make-build-debug/fdf_cLion.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/make-build-debug/fdf_cLion.dir/main.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/andrei/hack/school42/fdf_final/main.c -o CMakeFiles/make-build-debug/fdf_cLion.dir/main.c.s
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/make-build-debug/fdf_cLion.dir/src/main.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/andrei/hack/school42/fdf_final/src/main.c -o CMakeFiles/make-build-debug/fdf_cLion.dir/src/main.c.s
 
-CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.o: CMakeFiles/make-build-debug/fdf_cLion.dir/flags.make
-CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.o: ../vector.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.o   -c /Users/andrei/hack/school42/fdf_final/vector.c
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/vector.c.o: CMakeFiles/make-build-debug/fdf_cLion.dir/flags.make
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/vector.c.o: ../src/vector.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/make-build-debug/fdf_cLion.dir/src/vector.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/make-build-debug/fdf_cLion.dir/src/vector.c.o   -c /Users/andrei/hack/school42/fdf_final/src/vector.c
 
-CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/andrei/hack/school42/fdf_final/vector.c > CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.i
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/vector.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/make-build-debug/fdf_cLion.dir/src/vector.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/andrei/hack/school42/fdf_final/src/vector.c > CMakeFiles/make-build-debug/fdf_cLion.dir/src/vector.c.i
 
-CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/andrei/hack/school42/fdf_final/vector.c -o CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.s
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/vector.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/make-build-debug/fdf_cLion.dir/src/vector.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/andrei/hack/school42/fdf_final/src/vector.c -o CMakeFiles/make-build-debug/fdf_cLion.dir/src/vector.c.s
 
-CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.o: CMakeFiles/make-build-debug/fdf_cLion.dir/flags.make
-CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.o: ../alg_bbashiri.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.o   -c /Users/andrei/hack/school42/fdf_final/alg_bbashiri.c
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/draw.c.o: CMakeFiles/make-build-debug/fdf_cLion.dir/flags.make
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/draw.c.o: ../src/draw.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/make-build-debug/fdf_cLion.dir/src/draw.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/make-build-debug/fdf_cLion.dir/src/draw.c.o   -c /Users/andrei/hack/school42/fdf_final/src/draw.c
 
-CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/andrei/hack/school42/fdf_final/alg_bbashiri.c > CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.i
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/draw.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/make-build-debug/fdf_cLion.dir/src/draw.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/andrei/hack/school42/fdf_final/src/draw.c > CMakeFiles/make-build-debug/fdf_cLion.dir/src/draw.c.i
 
-CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/andrei/hack/school42/fdf_final/alg_bbashiri.c -o CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.s
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/draw.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/make-build-debug/fdf_cLion.dir/src/draw.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/andrei/hack/school42/fdf_final/src/draw.c -o CMakeFiles/make-build-debug/fdf_cLion.dir/src/draw.c.s
 
-CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.o: CMakeFiles/make-build-debug/fdf_cLion.dir/flags.make
-CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.o: ../map.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.o   -c /Users/andrei/hack/school42/fdf_final/map.c
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/map.c.o: CMakeFiles/make-build-debug/fdf_cLion.dir/flags.make
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/map.c.o: ../src/map.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/make-build-debug/fdf_cLion.dir/src/map.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/make-build-debug/fdf_cLion.dir/src/map.c.o   -c /Users/andrei/hack/school42/fdf_final/src/map.c
 
-CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/andrei/hack/school42/fdf_final/map.c > CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.i
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/map.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/make-build-debug/fdf_cLion.dir/src/map.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/andrei/hack/school42/fdf_final/src/map.c > CMakeFiles/make-build-debug/fdf_cLion.dir/src/map.c.i
 
-CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/andrei/hack/school42/fdf_final/map.c -o CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.s
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/map.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/make-build-debug/fdf_cLion.dir/src/map.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/andrei/hack/school42/fdf_final/src/map.c -o CMakeFiles/make-build-debug/fdf_cLion.dir/src/map.c.s
 
-CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.o: CMakeFiles/make-build-debug/fdf_cLion.dir/flags.make
-CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.o: ../keyboard_events.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.o   -c /Users/andrei/hack/school42/fdf_final/keyboard_events.c
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/keyboard_events.c.o: CMakeFiles/make-build-debug/fdf_cLion.dir/flags.make
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/keyboard_events.c.o: ../src/keyboard_events.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/make-build-debug/fdf_cLion.dir/src/keyboard_events.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/make-build-debug/fdf_cLion.dir/src/keyboard_events.c.o   -c /Users/andrei/hack/school42/fdf_final/src/keyboard_events.c
 
-CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/andrei/hack/school42/fdf_final/keyboard_events.c > CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.i
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/keyboard_events.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/make-build-debug/fdf_cLion.dir/src/keyboard_events.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/andrei/hack/school42/fdf_final/src/keyboard_events.c > CMakeFiles/make-build-debug/fdf_cLion.dir/src/keyboard_events.c.i
 
-CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/andrei/hack/school42/fdf_final/keyboard_events.c -o CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.s
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/keyboard_events.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/make-build-debug/fdf_cLion.dir/src/keyboard_events.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/andrei/hack/school42/fdf_final/src/keyboard_events.c -o CMakeFiles/make-build-debug/fdf_cLion.dir/src/keyboard_events.c.s
 
-CMakeFiles/make-build-debug/fdf_cLion.dir/modify.c.o: CMakeFiles/make-build-debug/fdf_cLion.dir/flags.make
-CMakeFiles/make-build-debug/fdf_cLion.dir/modify.c.o: ../modify.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/make-build-debug/fdf_cLion.dir/modify.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/make-build-debug/fdf_cLion.dir/modify.c.o   -c /Users/andrei/hack/school42/fdf_final/modify.c
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/modify.c.o: CMakeFiles/make-build-debug/fdf_cLion.dir/flags.make
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/modify.c.o: ../src/modify.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/make-build-debug/fdf_cLion.dir/src/modify.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/make-build-debug/fdf_cLion.dir/src/modify.c.o   -c /Users/andrei/hack/school42/fdf_final/src/modify.c
 
-CMakeFiles/make-build-debug/fdf_cLion.dir/modify.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/make-build-debug/fdf_cLion.dir/modify.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/andrei/hack/school42/fdf_final/modify.c > CMakeFiles/make-build-debug/fdf_cLion.dir/modify.c.i
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/modify.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/make-build-debug/fdf_cLion.dir/src/modify.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/andrei/hack/school42/fdf_final/src/modify.c > CMakeFiles/make-build-debug/fdf_cLion.dir/src/modify.c.i
 
-CMakeFiles/make-build-debug/fdf_cLion.dir/modify.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/make-build-debug/fdf_cLion.dir/modify.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/andrei/hack/school42/fdf_final/modify.c -o CMakeFiles/make-build-debug/fdf_cLion.dir/modify.c.s
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/modify.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/make-build-debug/fdf_cLion.dir/src/modify.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/andrei/hack/school42/fdf_final/src/modify.c -o CMakeFiles/make-build-debug/fdf_cLion.dir/src/modify.c.s
+
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/camera.c.o: CMakeFiles/make-build-debug/fdf_cLion.dir/flags.make
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/camera.c.o: ../src/camera.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/make-build-debug/fdf_cLion.dir/src/camera.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/make-build-debug/fdf_cLion.dir/src/camera.c.o   -c /Users/andrei/hack/school42/fdf_final/src/camera.c
+
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/camera.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/make-build-debug/fdf_cLion.dir/src/camera.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/andrei/hack/school42/fdf_final/src/camera.c > CMakeFiles/make-build-debug/fdf_cLion.dir/src/camera.c.i
+
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/camera.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/make-build-debug/fdf_cLion.dir/src/camera.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/andrei/hack/school42/fdf_final/src/camera.c -o CMakeFiles/make-build-debug/fdf_cLion.dir/src/camera.c.s
+
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/map_tools.c.o: CMakeFiles/make-build-debug/fdf_cLion.dir/flags.make
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/map_tools.c.o: ../src/map_tools.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/make-build-debug/fdf_cLion.dir/src/map_tools.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/make-build-debug/fdf_cLion.dir/src/map_tools.c.o   -c /Users/andrei/hack/school42/fdf_final/src/map_tools.c
+
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/map_tools.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/make-build-debug/fdf_cLion.dir/src/map_tools.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/andrei/hack/school42/fdf_final/src/map_tools.c > CMakeFiles/make-build-debug/fdf_cLion.dir/src/map_tools.c.i
+
+CMakeFiles/make-build-debug/fdf_cLion.dir/src/map_tools.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/make-build-debug/fdf_cLion.dir/src/map_tools.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/andrei/hack/school42/fdf_final/src/map_tools.c -o CMakeFiles/make-build-debug/fdf_cLion.dir/src/map_tools.c.s
 
 # Object files for target make-build-debug/fdf_cLion
 make__build__debug/fdf_cLion_OBJECTS = \
-"CMakeFiles/make-build-debug/fdf_cLion.dir/main.c.o" \
-"CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.o" \
-"CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.o" \
-"CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.o" \
-"CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.o" \
-"CMakeFiles/make-build-debug/fdf_cLion.dir/modify.c.o"
+"CMakeFiles/make-build-debug/fdf_cLion.dir/src/main.c.o" \
+"CMakeFiles/make-build-debug/fdf_cLion.dir/src/vector.c.o" \
+"CMakeFiles/make-build-debug/fdf_cLion.dir/src/draw.c.o" \
+"CMakeFiles/make-build-debug/fdf_cLion.dir/src/map.c.o" \
+"CMakeFiles/make-build-debug/fdf_cLion.dir/src/keyboard_events.c.o" \
+"CMakeFiles/make-build-debug/fdf_cLion.dir/src/modify.c.o" \
+"CMakeFiles/make-build-debug/fdf_cLion.dir/src/camera.c.o" \
+"CMakeFiles/make-build-debug/fdf_cLion.dir/src/map_tools.c.o"
 
 # External object files for target make-build-debug/fdf_cLion
 make__build__debug/fdf_cLion_EXTERNAL_OBJECTS =
 
-make-build-debug/fdf_cLion: CMakeFiles/make-build-debug/fdf_cLion.dir/main.c.o
-make-build-debug/fdf_cLion: CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.o
-make-build-debug/fdf_cLion: CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.o
-make-build-debug/fdf_cLion: CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.o
-make-build-debug/fdf_cLion: CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.o
-make-build-debug/fdf_cLion: CMakeFiles/make-build-debug/fdf_cLion.dir/modify.c.o
+make-build-debug/fdf_cLion: CMakeFiles/make-build-debug/fdf_cLion.dir/src/main.c.o
+make-build-debug/fdf_cLion: CMakeFiles/make-build-debug/fdf_cLion.dir/src/vector.c.o
+make-build-debug/fdf_cLion: CMakeFiles/make-build-debug/fdf_cLion.dir/src/draw.c.o
+make-build-debug/fdf_cLion: CMakeFiles/make-build-debug/fdf_cLion.dir/src/map.c.o
+make-build-debug/fdf_cLion: CMakeFiles/make-build-debug/fdf_cLion.dir/src/keyboard_events.c.o
+make-build-debug/fdf_cLion: CMakeFiles/make-build-debug/fdf_cLion.dir/src/modify.c.o
+make-build-debug/fdf_cLion: CMakeFiles/make-build-debug/fdf_cLion.dir/src/camera.c.o
+make-build-debug/fdf_cLion: CMakeFiles/make-build-debug/fdf_cLion.dir/src/map_tools.c.o
 make-build-debug/fdf_cLion: CMakeFiles/make-build-debug/fdf_cLion.dir/build.make
 make-build-debug/fdf_cLion: ../libft/libft.a
 make-build-debug/fdf_cLion: CMakeFiles/make-build-debug/fdf_cLion.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable make-build-debug/fdf_cLion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable make-build-debug/fdf_cLion"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/make-build-debug/fdf_cLion.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

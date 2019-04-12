@@ -123,167 +123,221 @@ make-build-debug/fdf_cLion/fast:
 	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/build
 .PHONY : make-build-debug/fdf_cLion/fast
 
-alg_bbashiri.o: alg_bbashiri.c.o
+src/camera.o: src/camera.c.o
 
-.PHONY : alg_bbashiri.o
-
-# target to build an object file
-alg_bbashiri.c.o:
-	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.o
-.PHONY : alg_bbashiri.c.o
-
-alg_bbashiri.i: alg_bbashiri.c.i
-
-.PHONY : alg_bbashiri.i
-
-# target to preprocess a source file
-alg_bbashiri.c.i:
-	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.i
-.PHONY : alg_bbashiri.c.i
-
-alg_bbashiri.s: alg_bbashiri.c.s
-
-.PHONY : alg_bbashiri.s
-
-# target to generate assembly for a file
-alg_bbashiri.c.s:
-	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.s
-.PHONY : alg_bbashiri.c.s
-
-keyboard_events.o: keyboard_events.c.o
-
-.PHONY : keyboard_events.o
+.PHONY : src/camera.o
 
 # target to build an object file
-keyboard_events.c.o:
-	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.o
-.PHONY : keyboard_events.c.o
+src/camera.c.o:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/src/camera.c.o
+.PHONY : src/camera.c.o
 
-keyboard_events.i: keyboard_events.c.i
+src/camera.i: src/camera.c.i
 
-.PHONY : keyboard_events.i
+.PHONY : src/camera.i
 
 # target to preprocess a source file
-keyboard_events.c.i:
-	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.i
-.PHONY : keyboard_events.c.i
+src/camera.c.i:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/src/camera.c.i
+.PHONY : src/camera.c.i
 
-keyboard_events.s: keyboard_events.c.s
+src/camera.s: src/camera.c.s
 
-.PHONY : keyboard_events.s
+.PHONY : src/camera.s
 
 # target to generate assembly for a file
-keyboard_events.c.s:
-	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.s
-.PHONY : keyboard_events.c.s
+src/camera.c.s:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/src/camera.c.s
+.PHONY : src/camera.c.s
 
-main.o: main.c.o
+src/draw.o: src/draw.c.o
 
-.PHONY : main.o
+.PHONY : src/draw.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/main.c.o
-.PHONY : main.c.o
+src/draw.c.o:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/src/draw.c.o
+.PHONY : src/draw.c.o
 
-main.i: main.c.i
+src/draw.i: src/draw.c.i
 
-.PHONY : main.i
+.PHONY : src/draw.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/main.c.i
-.PHONY : main.c.i
+src/draw.c.i:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/src/draw.c.i
+.PHONY : src/draw.c.i
 
-main.s: main.c.s
+src/draw.s: src/draw.c.s
 
-.PHONY : main.s
+.PHONY : src/draw.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/main.c.s
-.PHONY : main.c.s
+src/draw.c.s:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/src/draw.c.s
+.PHONY : src/draw.c.s
 
-map.o: map.c.o
+src/keyboard_events.o: src/keyboard_events.c.o
 
-.PHONY : map.o
+.PHONY : src/keyboard_events.o
 
 # target to build an object file
-map.c.o:
-	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.o
-.PHONY : map.c.o
+src/keyboard_events.c.o:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/src/keyboard_events.c.o
+.PHONY : src/keyboard_events.c.o
 
-map.i: map.c.i
+src/keyboard_events.i: src/keyboard_events.c.i
 
-.PHONY : map.i
+.PHONY : src/keyboard_events.i
 
 # target to preprocess a source file
-map.c.i:
-	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.i
-.PHONY : map.c.i
+src/keyboard_events.c.i:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/src/keyboard_events.c.i
+.PHONY : src/keyboard_events.c.i
 
-map.s: map.c.s
+src/keyboard_events.s: src/keyboard_events.c.s
 
-.PHONY : map.s
+.PHONY : src/keyboard_events.s
 
 # target to generate assembly for a file
-map.c.s:
-	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.s
-.PHONY : map.c.s
+src/keyboard_events.c.s:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/src/keyboard_events.c.s
+.PHONY : src/keyboard_events.c.s
 
-modify.o: modify.c.o
+src/main.o: src/main.c.o
 
-.PHONY : modify.o
+.PHONY : src/main.o
 
 # target to build an object file
-modify.c.o:
-	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/modify.c.o
-.PHONY : modify.c.o
+src/main.c.o:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/src/main.c.o
+.PHONY : src/main.c.o
 
-modify.i: modify.c.i
+src/main.i: src/main.c.i
 
-.PHONY : modify.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-modify.c.i:
-	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/modify.c.i
-.PHONY : modify.c.i
+src/main.c.i:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/src/main.c.i
+.PHONY : src/main.c.i
 
-modify.s: modify.c.s
+src/main.s: src/main.c.s
 
-.PHONY : modify.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-modify.c.s:
-	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/modify.c.s
-.PHONY : modify.c.s
+src/main.c.s:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/src/main.c.s
+.PHONY : src/main.c.s
 
-vector.o: vector.c.o
+src/map.o: src/map.c.o
 
-.PHONY : vector.o
+.PHONY : src/map.o
 
 # target to build an object file
-vector.c.o:
-	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.o
-.PHONY : vector.c.o
+src/map.c.o:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/src/map.c.o
+.PHONY : src/map.c.o
 
-vector.i: vector.c.i
+src/map.i: src/map.c.i
 
-.PHONY : vector.i
+.PHONY : src/map.i
 
 # target to preprocess a source file
-vector.c.i:
-	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.i
-.PHONY : vector.c.i
+src/map.c.i:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/src/map.c.i
+.PHONY : src/map.c.i
 
-vector.s: vector.c.s
+src/map.s: src/map.c.s
 
-.PHONY : vector.s
+.PHONY : src/map.s
 
 # target to generate assembly for a file
-vector.c.s:
-	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.s
-.PHONY : vector.c.s
+src/map.c.s:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/src/map.c.s
+.PHONY : src/map.c.s
+
+src/map_tools.o: src/map_tools.c.o
+
+.PHONY : src/map_tools.o
+
+# target to build an object file
+src/map_tools.c.o:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/src/map_tools.c.o
+.PHONY : src/map_tools.c.o
+
+src/map_tools.i: src/map_tools.c.i
+
+.PHONY : src/map_tools.i
+
+# target to preprocess a source file
+src/map_tools.c.i:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/src/map_tools.c.i
+.PHONY : src/map_tools.c.i
+
+src/map_tools.s: src/map_tools.c.s
+
+.PHONY : src/map_tools.s
+
+# target to generate assembly for a file
+src/map_tools.c.s:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/src/map_tools.c.s
+.PHONY : src/map_tools.c.s
+
+src/modify.o: src/modify.c.o
+
+.PHONY : src/modify.o
+
+# target to build an object file
+src/modify.c.o:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/src/modify.c.o
+.PHONY : src/modify.c.o
+
+src/modify.i: src/modify.c.i
+
+.PHONY : src/modify.i
+
+# target to preprocess a source file
+src/modify.c.i:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/src/modify.c.i
+.PHONY : src/modify.c.i
+
+src/modify.s: src/modify.c.s
+
+.PHONY : src/modify.s
+
+# target to generate assembly for a file
+src/modify.c.s:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/src/modify.c.s
+.PHONY : src/modify.c.s
+
+src/vector.o: src/vector.c.o
+
+.PHONY : src/vector.o
+
+# target to build an object file
+src/vector.c.o:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/src/vector.c.o
+.PHONY : src/vector.c.o
+
+src/vector.i: src/vector.c.i
+
+.PHONY : src/vector.i
+
+# target to preprocess a source file
+src/vector.c.i:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/src/vector.c.i
+.PHONY : src/vector.c.i
+
+src/vector.s: src/vector.c.s
+
+.PHONY : src/vector.s
+
+# target to generate assembly for a file
+src/vector.c.s:
+	$(MAKE) -f CMakeFiles/make-build-debug/fdf_cLion.dir/build.make CMakeFiles/make-build-debug/fdf_cLion.dir/src/vector.c.s
+.PHONY : src/vector.c.s
 
 # Help Target
 help:
@@ -294,24 +348,30 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... make-build-debug/fdf_cLion"
-	@echo "... alg_bbashiri.o"
-	@echo "... alg_bbashiri.i"
-	@echo "... alg_bbashiri.s"
-	@echo "... keyboard_events.o"
-	@echo "... keyboard_events.i"
-	@echo "... keyboard_events.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... map.o"
-	@echo "... map.i"
-	@echo "... map.s"
-	@echo "... modify.o"
-	@echo "... modify.i"
-	@echo "... modify.s"
-	@echo "... vector.o"
-	@echo "... vector.i"
-	@echo "... vector.s"
+	@echo "... src/camera.o"
+	@echo "... src/camera.i"
+	@echo "... src/camera.s"
+	@echo "... src/draw.o"
+	@echo "... src/draw.i"
+	@echo "... src/draw.s"
+	@echo "... src/keyboard_events.o"
+	@echo "... src/keyboard_events.i"
+	@echo "... src/keyboard_events.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/map.o"
+	@echo "... src/map.i"
+	@echo "... src/map.s"
+	@echo "... src/map_tools.o"
+	@echo "... src/map_tools.i"
+	@echo "... src/map_tools.s"
+	@echo "... src/modify.o"
+	@echo "... src/modify.i"
+	@echo "... src/modify.s"
+	@echo "... src/vector.o"
+	@echo "... src/vector.i"
+	@echo "... src/vector.s"
 .PHONY : help
 
 

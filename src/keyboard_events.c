@@ -55,6 +55,8 @@ int key_release(int keycode, t_map *map)
 
 int mouse_press(int button, int x, int y, t_map *map)
 {
+    x = y;
+    y = x;
     mlx_clear_window(map->mlx_ptr, map->win_ptr);
     if (button == 4)
         map->zoom += 1;

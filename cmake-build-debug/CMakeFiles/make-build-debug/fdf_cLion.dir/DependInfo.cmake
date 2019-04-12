@@ -4,12 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/andrei/hack/school42/fdf_final/alg_bbashiri.c" "/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles/make-build-debug/fdf_cLion.dir/alg_bbashiri.c.o"
-  "/Users/andrei/hack/school42/fdf_final/keyboard_events.c" "/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles/make-build-debug/fdf_cLion.dir/keyboard_events.c.o"
-  "/Users/andrei/hack/school42/fdf_final/main.c" "/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles/make-build-debug/fdf_cLion.dir/main.c.o"
-  "/Users/andrei/hack/school42/fdf_final/map.c" "/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles/make-build-debug/fdf_cLion.dir/map.c.o"
-  "/Users/andrei/hack/school42/fdf_final/modify.c" "/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles/make-build-debug/fdf_cLion.dir/modify.c.o"
-  "/Users/andrei/hack/school42/fdf_final/vector.c" "/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles/make-build-debug/fdf_cLion.dir/vector.c.o"
+  "/Users/andrei/hack/school42/fdf_final/src/camera.c" "/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles/make-build-debug/fdf_cLion.dir/src/camera.c.o"
+  "/Users/andrei/hack/school42/fdf_final/src/draw.c" "/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles/make-build-debug/fdf_cLion.dir/src/draw.c.o"
+  "/Users/andrei/hack/school42/fdf_final/src/keyboard_events.c" "/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles/make-build-debug/fdf_cLion.dir/src/keyboard_events.c.o"
+  "/Users/andrei/hack/school42/fdf_final/src/main.c" "/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles/make-build-debug/fdf_cLion.dir/src/main.c.o"
+  "/Users/andrei/hack/school42/fdf_final/src/map.c" "/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles/make-build-debug/fdf_cLion.dir/src/map.c.o"
+  "/Users/andrei/hack/school42/fdf_final/src/map_tools.c" "/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles/make-build-debug/fdf_cLion.dir/src/map_tools.c.o"
+  "/Users/andrei/hack/school42/fdf_final/src/modify.c" "/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles/make-build-debug/fdf_cLion.dir/src/modify.c.o"
+  "/Users/andrei/hack/school42/fdf_final/src/vector.c" "/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles/make-build-debug/fdf_cLion.dir/src/vector.c.o"
   )
 set(CMAKE_C_COMPILER_ID "Clang")
 

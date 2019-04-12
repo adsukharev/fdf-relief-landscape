@@ -80,25 +80,31 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/andrei/hack/school42/fdf_final/alg_bbashiri.c">
+		<Unit filename="/Users/andrei/hack/school42/fdf_final/src/camera.c">
 			<Option target="make-build-debug/fdf_cLion"/>
 		</Unit>
-		<Unit filename="/Users/andrei/hack/school42/fdf_final/fdf.h">
+		<Unit filename="/Users/andrei/hack/school42/fdf_final/src/draw.c">
 			<Option target="make-build-debug/fdf_cLion"/>
 		</Unit>
-		<Unit filename="/Users/andrei/hack/school42/fdf_final/keyboard_events.c">
+		<Unit filename="/Users/andrei/hack/school42/fdf_final/src/fdf.h">
 			<Option target="make-build-debug/fdf_cLion"/>
 		</Unit>
-		<Unit filename="/Users/andrei/hack/school42/fdf_final/main.c">
+		<Unit filename="/Users/andrei/hack/school42/fdf_final/src/keyboard_events.c">
 			<Option target="make-build-debug/fdf_cLion"/>
 		</Unit>
-		<Unit filename="/Users/andrei/hack/school42/fdf_final/map.c">
+		<Unit filename="/Users/andrei/hack/school42/fdf_final/src/main.c">
 			<Option target="make-build-debug/fdf_cLion"/>
 		</Unit>
-		<Unit filename="/Users/andrei/hack/school42/fdf_final/modify.c">
+		<Unit filename="/Users/andrei/hack/school42/fdf_final/src/map.c">
 			<Option target="make-build-debug/fdf_cLion"/>
 		</Unit>
-		<Unit filename="/Users/andrei/hack/school42/fdf_final/vector.c">
+		<Unit filename="/Users/andrei/hack/school42/fdf_final/src/map_tools.c">
+			<Option target="make-build-debug/fdf_cLion"/>
+		</Unit>
+		<Unit filename="/Users/andrei/hack/school42/fdf_final/src/modify.c">
+			<Option target="make-build-debug/fdf_cLion"/>
+		</Unit>
+		<Unit filename="/Users/andrei/hack/school42/fdf_final/src/vector.c">
 			<Option target="make-build-debug/fdf_cLion"/>
 		</Unit>
 		<Unit filename="/Users/andrei/hack/school42/fdf_final/CMakeLists.txt">

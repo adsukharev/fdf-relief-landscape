@@ -1,9 +1,6 @@
 
 #include "fdf.h"
 
-
-//int av, char **arg
-
 static t_map *init_map(void)
 {
     t_map *map;
@@ -20,42 +17,24 @@ static t_map *init_map(void)
     return (map);
 }
 
-int main(void)
+int main(int ac, char **av)
 {
     t_vector ve;
     t_map *map;
 
+    if (ac != 2)
+    {
+        printf("invalid input\n");
+        return (0);
+    }
     map = init_map();
     ve = init_vector(10);
     map->vector = &ve;
-    if (!(fill_map("/Users/andrei/hack/school42/fdf_final/maps/diana.fdf", map)))
+    if (!(fill_map(av[1], map)))
     {
-        printf("invalid map");
+        printf("invalid map\n");
         return (0);
     }
-//  if (!(fill_map("/Users/bbashiri/andrey/fdf_new/maps/elem-col.fdf", map, map->vector)))
-//  {
-//      printf("invalid map");
-//      return (0);
-//  }
-
-//    printf("%d\n", map->width);
-//    printf("%d\n", map->height);
-//    int i = 0;
-//    while (i < map->vector->size)
-//    {
-//        printf("x: %d y:%d z:%d c: %d\n", map->vector->point[i].x, map->vector->point[i].y, map->vector->point[i].z, map->vector->point[i].colour);
-//        i++;
-//    }
-
-//    int i = 0;
-//    while (i < map->vector->size)
-//    {
-////        if (i == map->width)
-//        if (map->vector->point[i].colour != 16777215)
-//            printf("%d, %d ",map->vector->point[i].z, map->vector->point[i].colour);
-//        i++;
-//    }
     map->mlx_ptr = mlx_init();
     map->win_ptr = mlx_new_window(map->mlx_ptr, WINDOW_WIDTH, WINDOW_HEIGHT, "bbashiri/ngunthor");
     manage_bbashiri(map);

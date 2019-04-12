@@ -1,6 +1,6 @@
 #include "fdf.h"
 
-void algorithm(int x1, int y1, int x2, int y2, int colour, t_map *map)
+static void algorithm(int x1, int y1, int x2, int y2, int colour, t_map *map)
 {
     const int deltaX = abs(x2 - x1);
     const int deltaY = abs(y2 - y1);
@@ -26,7 +26,7 @@ void algorithm(int x1, int y1, int x2, int y2, int colour, t_map *map)
     }
 }
 
-int draw(t_map *map, t_point *point)
+static int draw(t_map *map, t_point *point)
 {
     int i;
 
@@ -46,7 +46,7 @@ int draw(t_map *map, t_point *point)
     return (1);
 }
 
-void draw_text(t_map *map)
+static void draw_text(t_map *map)
 {
     mlx_string_put(map->mlx_ptr, map->win_ptr, 0, 0, 16777215, " 'c' - change perspective");
     mlx_string_put(map->mlx_ptr, map->win_ptr, 0, 20, 16777215, " 'q' - rotate");
