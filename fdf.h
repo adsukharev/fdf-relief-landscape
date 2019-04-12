@@ -9,14 +9,13 @@
 
 # define WINDOW_WIDTH   1000
 # define WINDOW_HEIGHT	600
-# define ABS(x) x >= 0 ? x : -x
 
 typedef struct  s_point
 {
     int         x;
     int         y;
     int         z;
-    long        colour;
+    int        colour;
 }               t_point;
 
 typedef struct  s_vector
@@ -37,15 +36,14 @@ typedef struct  s_map
     int         offset_y;
     int         zoom;
     double      gradus_axis;
-    int         colour;
     char        camera;
+    int         colour;
 
 }               t_map;
 
 /* ***************************map.c****************************************** */
 
-t_map *init_map(void);
-int fill_map(char *arg, t_map *map, t_vector *v);
+int fill_map(char *arg, t_map *map);
 
 /* ***************************vector.c****************************************** */
 
@@ -64,7 +62,7 @@ void movements(t_point *point, int offset_x, int offset_y);
 
 /* ***************************alg_bbashiri.c****************************************** */
 
-void algorithm(int x1, int y1, int x2, int y2, long colour, t_map *map);
+void algorithm(int x1, int y1, int x2, int y2, int colour, t_map *map);
 int draw(t_map *map, t_point *point);
 int manage_bbashiri(t_map *map);
 

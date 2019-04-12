@@ -39,6 +39,7 @@ int key_release(int keycode, t_map *map)
     else if (keycode == 8)
     {
         map->camera += 1;
+        map->gradus_axis = 0;
         if (map->camera == 4)
             map->camera = 1;
     }

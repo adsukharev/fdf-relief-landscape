@@ -1,49 +1,7 @@
 
 #include "fdf.h"
 
-t_map *init_map(void)
-{
-    t_map *map;
-
-    if (!(map = (t_map *)malloc(sizeof(t_map))))
-        return (NULL);
-    map->width = 0;
-    map->height = 0;
-    map->zoom = 10;
-    map->offset_x = WINDOW_WIDTH / 2;
-    map->offset_y = WINDOW_HEIGHT / 2;
-    map->gradus_axis = 0;
-    map->colour = 16777215;
-    map->camera = 1;
-    return (map);
-}
-
-static  int	ft_atoii(const char *str)
-{
-    int				i;
-    long long		res;
-    int				znak;
-
-    znak = 1;
-    res = 0;
-    i = 0;
-    while ((str[i] >= 9 && str[i] <= 13) || str[i] == ' ')
-        i++;
-    if (str[i] == '-')
-    {
-        znak = -1;
-        i++;
-    }
-    else if (str[i] == '+')
-        i++;
-    while (str[i] >= '0' && str[i] <= '9')
-    {
-        res = res * 10 + (str[i++] - '0');
-    }
-    return (res * znak);
-}
-
-int convert_to_nbm(char c)
+static int convert_to_nbm(char c)
 {
     if (c >= 'a' && c <= 'z')
         c = c - 'a' + 10;
@@ -56,113 +14,133 @@ int convert_to_nbm(char c)
     return (c);
 }
 
-static  long ft_atohex(const char *str)
+static  int ft_atohex(const char *str)
 {
     int			i;
-    long		res;
+    int		res;
     int     converted;
-    char    *dict;
 
-    dict = "0123456789abcdef";
-//    ft_strcpy(dict, "0123456789abcdef");
     i = 0;
     res = 0;
-    while (str[i] != ' ' && str[i] != '\n' && str[i])
+    while (str[i])
     {
         converted = convert_to_nbm(str[i++]);
+        if (converted == -1)
+            return (-1);
         res = converted + res * 16;
     }
     return (res);
 }
 
-int count_hex(char *str)
+int parse_z_colour(char *split, t_map *map, int x)
+{
+    t_point point;
+    int i;
+
+    i = 0;
+    while (split[i] && split[i] != ',')
+    {
+        if (!(ft_isdigit(split[i])) && split[i] != '-')
+            return (0);
+        i++;
+    }
+    point.colour = 10777215;
+    if (split[i] == ',')
+    {
+        if (split[i + 1] == '0' && (split[i + 2] == 'x' || split[i + 2] == 'X'))
+        {
+            point.colour = ft_atohex(&split[i + 3]);
+            if (point.colour == -1)
+                return (0);
+        }
+        else
+            return (0);
+    }
+    point.y = map->height;
+    point.x = x - map->width / 2;
+    point.z = ft_atoi(split);
+    push_back(map->vector, point);
+    return (1);
+}
+
+int cycle_parse(char **split, t_map *map)
 {
     int i;
 
     i = 0;
-    while (str[i] != ' ' && str[i] && str[i] != '\n' )
+    while (split[i])
     {
+        if (parse_z_colour(split[i], map, i) == 0)
+            return (0);
         i++;
     }
-    return (i);
-}
-
-static int count_width_height_of_map(t_map *map, char *arg)
-{
-    int fd;
-    int i;
-    char *gnl;
-    int validate_width;
-
-    fd = open(arg, O_RDONLY);
-    validate_width = 0;
-
-    while (get_next_line(fd, &gnl))
-    {
-        map->height++;
-        map->width = 0;
-        i = 0;
-        while (gnl[i])
-        {
-            if (gnl[i] != ' ' && gnl[i] != ',' && gnl[i] != '-' && !ft_isdigit(gnl[i]))
-                return (0);
-            if (ft_isdigit(gnl[i]) || gnl[i] == '-')
-            {
-                map->width++;
-                i += ft_countint(ft_atoii(&gnl[i])) - 1;
-            }
-            i++;
-            if (gnl[i] == ',')
-            {
-                if (ft_isdigit(gnl[++i]))
-                    i += count_hex(&gnl[i]);
-                else
-                    return (0);
-            }
-        }
-        ft_strdel(&gnl);
-    }
-    close(fd);
     return (1);
 }
 
-int fill_map(char *arg, t_map *map, t_vector *v)
+int	ft_doublestrlen(char **s)
+{
+    int	i;
+
+    i = 0;
+    while (s[i])
+        i++;
+    return (i);
+}
+
+
+int get_first_line(int fd, t_map *map)
+{
+    char *gnl;
+    char **split;
+
+    get_next_line(fd, &gnl);
+    if (!gnl)
+        return (0);
+    split = ft_strsplit(gnl, ' ');
+    ft_strdel(&gnl);
+    map->width = ft_doublestrlen(split);
+    map->height = 1;
+    if (cycle_parse(split, map) == 0)
+        return (0);
+    ft_strdelite(split, map->width);
+    return (1);
+}
+
+void change_height(t_map *map)
+{
+    int i;
+
+    i = 0;
+    while (i < map->vector->size)
+    {
+        map->vector->point[i].y -= map->height / 2;
+        i++;
+    }
+}
+
+int fill_map(char *arg, t_map *map)
 {
     int fd;
     char *gnl;
-    int i;
-    t_point point;
+    char **split;
+    int validate_width;
 
-    if (!(count_width_height_of_map(map, arg)))
-        return (0);
     fd = open(arg, O_RDONLY);
-    point.y = -map->height / 2;
+    if (get_first_line(fd, map) == 0)
+        return (0);
     while (get_next_line(fd, &gnl))
     {
-        point.x = -map->width / 2;
-        point.y++;
-        i = 0;
-        point.colour = 16777215;
-        while (gnl[i])
-        {
-            if (gnl[i] == ',')
-            {
-//                if (gnl[++i] != '0')
-//                    return (0);
-                i += 3;
-                point.colour = ft_atohex(&gnl[i]);
-                i += count_hex(&gnl[i]);
-            }
-            if (ft_isdigit(gnl[i]) || gnl[i] == '-')
-            {
-                point.z = ft_atoii(&gnl[i]);
-                i += ft_countint(ft_atoii(&gnl[i])) - 1;
-                push_back(v, point);
-                point.x++;
-            }
-            i++;
-        }
+        split = ft_strsplit(gnl, ' ');
+        ft_strdel(&gnl);
+        map->height++;
+        validate_width = ft_doublestrlen(split);
+        if (validate_width != map->width)
+            return (0);
+        if (cycle_parse(split, map) == 0)
+            return (0);
+        ft_strdelite(split, map->width);
     }
+    change_height(map);
     close(fd);
     return (1);
 }
