@@ -1,3 +1,0 @@
-/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/andrei/hack/school42/fdf_final/cmake-build-debug/CMakeFiles/make-build-debug/fdf_cLion.dir
