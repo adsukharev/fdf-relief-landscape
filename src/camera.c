@@ -1,7 +1,7 @@
 
-#include "fdf.h"
+#include  "fdf.h"
 
-void		perspective(t_point *p)
+void  perspective(t_point *p)
 {
     float x;
     float y;
@@ -26,7 +26,7 @@ void iso(t_point *point)
     point->y = -point->z + (previous_x + previous_y) * sin(0.523599);
 }
 
-void		dimetric(t_point *p)
+void dimetric(t_point *p)
 {
     float x;
     float y;

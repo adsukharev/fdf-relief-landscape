@@ -1,8 +1,8 @@
 #include "fdf.h"
 
-t_vector     init_vector(int num)
+t_vector      init_vector(int num)
 {
-    t_vector el;
+    t_vector  el;
 
     el.point = (t_point*)malloc(sizeof(t_point) * num);
     el.cap = num;
@@ -10,16 +10,16 @@ t_vector     init_vector(int num)
     return (el);
 }
 
-static void	copy_points(t_point *new, t_point *old, int i)
+static  void  copy_points(t_point *new, t_point *old, int i)
 {
     while (i >= 0)
     {
-        new[i] = old[i];
-        i--;
+      new[i] = old[i];
+      i--;
     }
 }
 
-static void    resize(t_vector *v)
+static  void  resize(t_vector *v)
 {
     t_point *n_points;
 
@@ -28,16 +28,15 @@ static void    resize(t_vector *v)
     copy_points(n_points, v->point, v->size);
     free(v->point);
     v->point = n_points;
-
 }
 
-void    push_back(t_vector *v, t_point el)
+void          push_back(t_vector *v, t_point el)
 {
     int i;
 
     i = v->size;
     if (i == v->cap)
-        resize(v);
+      resize(v);
     v->point[i].x = el.x;
     v->point[i].y = el.y;
     v->point[i].z = el.z;
@@ -45,13 +44,13 @@ void    push_back(t_vector *v, t_point el)
     v->size++;
 }
 
-void free_points(t_vector *v)
+void          free_points(t_vector *v)
 {
     int i;
 
     i = 0;
     while (i < v->size)
     {
-        free(&v->point[i++]);
+      free(&v->point[i++]);
     }
 }

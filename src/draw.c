@@ -1,5 +1,5 @@
 #include "fdf.h"
-
+// norm all
 static void algorithm(int x1, int y1, int x2, int y2, int colour, t_map *map)
 {
     const int deltaX = abs(x2 - x1);

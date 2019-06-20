@@ -1,5 +1,6 @@
 #include "fdf.h"
 
+// norm key_release
 int key_release(int keycode, t_map *map)
 {
     mlx_clear_window(map->mlx_ptr, map->win_ptr);
@@ -59,14 +60,13 @@ int mouse_press(int button, int x, int y, t_map *map)
     y = x;
     mlx_clear_window(map->mlx_ptr, map->win_ptr);
     if (button == 4)
-        map->zoom += 1;
+      map->zoom += 1;
     if (button == 5)
     {
-        map->zoom -= 1;
-        if (map->zoom <= 0)
-            map->zoom = 1;
+      map->zoom -= 1;
+      if (map->zoom <= 0)
+        map->zoom = 1;
     }
-
     manage_bbashiri(map);
     return (1);
 }

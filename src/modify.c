@@ -1,7 +1,7 @@
 
 #include "fdf.h"
 
-void rotate(t_point *point,  double rotation)
+void  rotate(t_point *point,  double rotation)
 {
     float p_x;
     float p_y;
@@ -27,10 +27,9 @@ void rotate(t_point *point,  double rotation)
     point->x = p_x * cos(rotation) - p_y * sin(rotation);
     point->y = p_x * sin(rotation) + p_y * cos(rotation);
     point->z = p_z;
-
 }
 
-void scale(t_point old, t_point *new, int zoom)
+void  scale(t_point old, t_point *new, int zoom)
 {
     new->x = old.x * zoom;
     new->y = old.y * zoom;
@@ -38,7 +37,7 @@ void scale(t_point old, t_point *new, int zoom)
     new->colour = old.colour;
 }
 
-void movements(t_point *point, int offset_x, int offset_y)
+void  movements(t_point *point, int offset_x, int offset_y)
 {
     point->x += offset_x;
     point->y += offset_y;
